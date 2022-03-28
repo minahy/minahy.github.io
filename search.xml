@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>New test</title>
+      <link href="/2022/03/28/fu-ben/"/>
+      <url>/2022/03/28/fu-ben/</url>
+      
+        <content type="html"><![CDATA[<h2 id="new-test"><a href="#new-test" class="headerlink" title="new test"></a>new test</h2><h3 id="word1"><a href="#word1" class="headerlink" title="word1"></a>word1</h3><p>asfhkslfjdjglkjksgjdl;jgkgsjlkjgsljk</p><h3 id="word2"><a href="#word2" class="headerlink" title="word2"></a>word2</h3><p>644878451465486784841654654</p><h3 id="word3"><a href="#word3" class="headerlink" title="word3"></a>word3</h3><p>!@#$%^&amp;^*&amp;(*&amp;)&amp;^^$%#@$%%&amp;^%$#</p><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><pre class=" language-sql"><code class="language-sql">ls <span class="token operator">/</span>etc<span class="token operator">/</span>mnt</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>New test</title>
+      <link href="/2022/03/28/cs/"/>
+      <url>/2022/03/28/cs/</url>
+      
+        <content type="html"><![CDATA[<h2 id="new-test"><a href="#new-test" class="headerlink" title="new test"></a>new test</h2><h3 id="word1"><a href="#word1" class="headerlink" title="word1"></a>word1</h3><p>asfhkslfjdjglkjksgjdl;jgkgsjlkjgsljk</p><h3 id="word2"><a href="#word2" class="headerlink" title="word2"></a>word2</h3><p>644878451465486784841654654</p><h3 id="word3"><a href="#word3" class="headerlink" title="word3"></a>word3</h3><p>!@#$%^&amp;^*&amp;(*&amp;)&amp;^^$%#@$%%&amp;^%$#</p><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><pre class=" language-sql"><code class="language-sql">ls <span class="token operator">/</span>etc<span class="token operator">/</span>mnt</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/03/28/hello-world/"/>
+      <url>/2022/03/28/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
