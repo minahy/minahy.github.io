@@ -4,37 +4,11 @@
   
     
     <entry>
-      <title>New test</title>
-      <link href="/2022/03/28/fu-ben/"/>
-      <url>/2022/03/28/fu-ben/</url>
+      <title>云服务器搭建zerotier-moon，planet</title>
+      <link href="/2022/03/28/yun-fu-wu-qi-da-jian-zerotier-moon-planet/"/>
+      <url>/2022/03/28/yun-fu-wu-qi-da-jian-zerotier-moon-planet/</url>
       
-        <content type="html"><![CDATA[<h2 id="new-test"><a href="#new-test" class="headerlink" title="new test"></a>new test</h2><h3 id="word1"><a href="#word1" class="headerlink" title="word1"></a>word1</h3><p>asfhkslfjdjglkjksgjdl;jgkgsjlkjgsljk</p><h3 id="word2"><a href="#word2" class="headerlink" title="word2"></a>word2</h3><p>644878451465486784841654654</p><h3 id="word3"><a href="#word3" class="headerlink" title="word3"></a>word3</h3><p>!@#$%^&amp;^*&amp;(*&amp;)&amp;^^$%#@$%%&amp;^%$#</p><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><pre class=" language-sql"><code class="language-sql">ls <span class="token operator">/</span>etc<span class="token operator">/</span>mnt</code></pre>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>New test</title>
-      <link href="/2022/03/28/cs/"/>
-      <url>/2022/03/28/cs/</url>
-      
-        <content type="html"><![CDATA[<h2 id="new-test"><a href="#new-test" class="headerlink" title="new test"></a>new test</h2><h3 id="word1"><a href="#word1" class="headerlink" title="word1"></a>word1</h3><p>asfhkslfjdjglkjksgjdl;jgkgsjlkjgsljk</p><h3 id="word2"><a href="#word2" class="headerlink" title="word2"></a>word2</h3><p>644878451465486784841654654</p><h3 id="word3"><a href="#word3" class="headerlink" title="word3"></a>word3</h3><p>!@#$%^&amp;^*&amp;(*&amp;)&amp;^^$%#@$%%&amp;^%$#</p><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><pre class=" language-sql"><code class="language-sql">ls <span class="token operator">/</span>etc<span class="token operator">/</span>mnt</code></pre>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2022/03/28/hello-world/"/>
-      <url>/2022/03/28/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="云服务器搭建zerotier-moon，planet"><a href="#云服务器搭建zerotier-moon，planet" class="headerlink" title="云服务器搭建zerotier-moon，planet"></a>云服务器搭建zerotier-moon，planet</h2><h3 id="1、拉取脚本"><a href="#1、拉取脚本" class="headerlink" title="1、拉取脚本"></a>1、拉取脚本</h3><pre class=" language-bash"><code class="language-bash"><span class="token function">wget</span> https://gitee.com/superme123/zerotier_moon_planet/raw/master/zerotier_moon_planet.sh<span class="token operator">&amp;&amp;</span><span class="token function">chmod</span> 777 zerotier_moon_planet.sh</code></pre><h3 id="2、运行脚本"><a href="#2、运行脚本" class="headerlink" title="2、运行脚本"></a>2、运行脚本</h3><pre class=" language-bash"><code class="language-bash"><span class="token function">bash</span> zerotier_moon_planet.sh</code></pre><p><img src="https://s2.loli.net/2022/03/30/KxbODZVghda8qGT.png" alt="启动脚本"></p><h3 id="3、安装并配置-ztncui"><a href="#3、安装并配置-ztncui" class="headerlink" title="3、安装并配置 ztncui"></a>3、安装并配置 ztncui</h3><p>3.1 输入1，回车</p><p><img src="https://s2.loli.net/2022/03/30/GOHtA4oshweXV2B.png" alt="安装ztncui"></p><p>3.2 安装完成后在浏览器地址栏输入服务器 https:&#x2F;&#x2F;你的公网ip:3443 进入ztncui，账号为admin,密码为password</p><p>,首次登录会提示更改密码。改好密码登录成功后点击Add network创建网络栏。</p><p>3.3 输入名称后点击Create Network创建网络</p><p><img src="https://s2.loli.net/2022/03/30/2YGF5s8yfXqkZet.jpg" alt="创建zerotier网段.jpg"></p><p>3.4 在跳转到的页面点击Easy setup</p><p><img src="https://s2.loli.net/2022/03/30/7YuPnFXBwEszGk4.jpg" alt="Easy setup.jpg"></p><p>3.5 先点击Generate network address 分配ip地址，然后点Submit</p><p><img src="https://s2.loli.net/2022/03/30/AJ43tz7jFlVh5ux.jpg" alt="创建虚拟ip段.jpg"></p><p>3.6 完成后点Network栏，即可看到刚创建的网络，复制刚才创建好的网络ID</p><p><img src="https://s2.loli.net/2022/03/30/CqoYc3rUfTbXaIO.png" alt="复制网络ID.png"></p><h3 id="4、安装moon，并加入网络中"><a href="#4、安装moon，并加入网络中" class="headerlink" title="4、安装moon，并加入网络中"></a>4、安装moon，并加入网络中</h3><p>4.1 安装moon</p><pre class=" language-bash"><code class="language-bash"><span class="token function">bash</span> zerotier_moon_planet.sh输入2,安装moon，并粘贴刚才复制的网络ID，回车</code></pre><p><img src="https://s2.loli.net/2022/03/30/eyFhn34lQidmA2x.png" alt="安装moon.jpg"></p><p>4.2 允许加入网络</p><p>浏览器打开创建好的网络，在里面会发现条Members，把Authorized列的√上即可加入网络，等待几秒即可获取到ip。</p><p><img src="https://s2.loli.net/2022/03/30/nUmAvuleLZ4RJgC.png" alt="允许加入网络.jpg"></p><h3 id="5、下载mood-s"><a href="#5、下载mood-s" class="headerlink" title="5、下载mood.s"></a>5、下载mood.s</h3><p>进入到&#x2F;var&#x2F;lib&#x2F;zerotier-one&#x2F;路径，把该路径下的moons.d文件夹用winscp复制到你电脑的zerotier安装目录即可</p><p>云服务器 moons.d 复制路径：</p><pre class=" language-bash"><code class="language-bash">/var/lib/zerotier-one/</code></pre><p>Windows moons.d 复制路径：</p><pre class=" language-bash"><code class="language-bash">C:\ProgramData\ZeroTier\One</code></pre>]]></content>
       
       
       
