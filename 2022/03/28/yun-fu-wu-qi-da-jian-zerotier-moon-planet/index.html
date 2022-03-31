@@ -498,12 +498,22 @@
 <p>4.2 允许加入网络</p>
 <p>浏览器打开创建好的网络，在里面会发现条Members，把Authorized列的√上即可加入网络，等待几秒即可获取到ip。</p>
 <p><img src="https://s2.loli.net/2022/03/30/nUmAvuleLZ4RJgC.png" alt="允许加入网络.jpg"></p>
-<h3 id="5、下载mood-s"><a href="#5、下载mood-s" class="headerlink" title="5、下载mood.s"></a>5、下载mood.s</h3><p>进入到&#x2F;var&#x2F;lib&#x2F;zerotier-one&#x2F;路径，把该路径下的moons.d文件夹用winscp复制到你电脑的zerotier安装目录即可</p>
-<p>云服务器 moons.d 复制路径：</p>
+<h3 id="5、生成Planet文件"><a href="#5、生成Planet文件" class="headerlink" title="5、生成Planet文件"></a>5、生成Planet文件</h3><p>服务器shell执行脚本，输入3选择迁移控制器</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">bash</span> zerotier_moon_planet.sh
+输入3
+</code></pre>
+<h3 id="6、下载mood-s和Planet"><a href="#6、下载mood-s和Planet" class="headerlink" title="6、下载mood.s和Planet"></a>6、下载mood.s和Planet</h3><p>进入到&#x2F;var&#x2F;lib&#x2F;zerotier-one&#x2F;路径，把该路径下的moons.d文件夹用winscp复制到你电脑的zerotier安装目录即可</p>
+<p>云服务器 moons.d 文件夹复制路径：</p>
 <pre class=" language-bash"><code class="language-bash">/var/lib/zerotier-one/
 </code></pre>
-<p>Windows moons.d 复制路径：</p>
+<p>云服务器 Planet 文件复制路径：</p>
+<pre><code>/home
+</code></pre>
+<p>Windows moons.d 文件夹替换路径：</p>
 <pre class=" language-bash"><code class="language-bash">C:\ProgramData\ZeroTier\One
+</code></pre>
+<p>Windows Planet 替换路径（先备份源文件到其它地方再替换）：</p>
+<pre><code>C:\ProgramData\ZeroTier\One
 </code></pre>
 
                 
@@ -740,18 +750,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/28/yun-fu-wu-qi-da-jian-zerotier-moon-planet/">
+                <a href="/2022/03/30/zerotier-ke-hu-duan-jia-zai-moons-planet/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="云服务器搭建zerotier-moon，planet">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="zerotier客户端加载moons planet">
                         
-                        <span class="card-title">云服务器搭建zerotier-moon，planet</span>
+                        <span class="card-title">zerotier客户端加载moons planet</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -761,9 +770,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-28
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-30
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -772,7 +781,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
