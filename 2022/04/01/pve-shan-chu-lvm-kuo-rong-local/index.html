@@ -4,10 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="zerotier客户端加载moons planet, Minaの筆記">
-    <meta name="description" content="zerotier客户端加载moons planet1、安卓端1.1 官方app不支持手动设置moon和planet，这里我们点击下面下载github上的ZerotierFix
-ZerotierFix 下载
-1.2 把从服务器生成的mood.">
+    <meta name="keywords" content="Minaの筆記">
+    <meta name="description" content="pve删除lvm扩容local建议在刚装PVE或者没有虚拟机的情况下执行扩容
+1、删除local-lvmlvremove pve/data    #删除local-lvm
+输入y
+Do you really want to remove a">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +20,7 @@ ZerotierFix 下载
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>zerotier客户端加载moons planet | Minaの筆記</title>
+    <title>Minaの筆記</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -321,12 +322,12 @@ ZerotierFix 下载
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">zerotier客户端加载moons planet</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -454,7 +455,7 @@ ZerotierFix 下载
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-30
+                    2022-04-01
                 </div>
                 
 
@@ -475,28 +476,23 @@ ZerotierFix 下载
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="zerotier客户端加载moons-planet"><a href="#zerotier客户端加载moons-planet" class="headerlink" title="zerotier客户端加载moons planet"></a>zerotier客户端加载moons planet</h2><h3 id="1、安卓端"><a href="#1、安卓端" class="headerlink" title="1、安卓端"></a>1、安卓端</h3><p>1.1 官方app不支持手动设置moon和planet，这里我们点击下面下载github上的ZerotierFix</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/kaaass/ZerotierFix/releases/download/1.0.4/1.0.4.apk">ZerotierFix 下载</a></p>
-<p>1.2 把从服务器生成的mood.s文件夹和Planet文件复制到手机。（路径不限，记住路径即可）</p>
-<p>1.3 安装完成后打开ZerotierFix，点击右上角三个点,选择入轨，点击+按钮，选择从文件导入，在弹出的文件管理器中选择复制到该手机的moon文件，后缀是.moon。</p>
-<center>
-<figure>
-<img src="https://s2.loli.net/2022/03/31/rZYvBSPkiKeCh2G.jpg" />
-·
-·
-·
-<img src="https://s2.loli.net/2022/03/31/E7MX4CvnBR9aqYG.png" />
-</figure>
-</center>
-1.4导入Planet,主界面点击右上角选择设置，把图中1,2步骤的按钮打开后，点击设置planet文件，在弹出的文件管理器中选择复制到该手机的planet文件
-
-<p><img src="https://s2.loli.net/2022/03/31/8yHioVzP9pYgSBl.png" alt="安卓设置planet"></p>
-<p>2、</p>
-<p>3、</p>
-<p>4、</p>
-<p>5、</p>
-<p>6、</p>
-<p>7、</p>
+                <h2 id="pve删除lvm扩容local"><a href="#pve删除lvm扩容local" class="headerlink" title="pve删除lvm扩容local"></a>pve删除lvm扩容local</h2><p>建议在刚装PVE或者没有虚拟机的情况下执行扩容</p>
+<h3 id="1、删除local-lvm"><a href="#1、删除local-lvm" class="headerlink" title="1、删除local-lvm"></a>1、删除local-lvm</h3><pre class=" language-bash"><code class="language-bash">lvremove pve/data    <span class="token comment" spellcheck="true">#删除local-lvm</span>
+输入y
+Do you really want to remove active logical volume pve/data? <span class="token punctuation">[</span>y/n<span class="token punctuation">]</span>: y 
+vgdisplay pve <span class="token operator">|</span> <span class="token function">grep</span> Free
+</code></pre>
+<h3 id="2、增加分区空间"><a href="#2、增加分区空间" class="headerlink" title="2、增加分区空间"></a>2、增加分区空间</h3><pre class=" language-bash"><code class="language-bash">lvextend -l +100%FREE -f pve/roo
+</code></pre>
+<h3 id="3、查看磁盘信息"><a href="#3、查看磁盘信息" class="headerlink" title="3、查看磁盘信息"></a>3、查看磁盘信息</h3><p>这里可以看到pve-root的空间已经变了，但我们仍需要执行最后一条命令让它生效</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">fdisk</span> -l
+</code></pre>
+<h3 id="4、执行上边的扩容操作"><a href="#4、执行上边的扩容操作" class="headerlink" title="4、执行上边的扩容操作"></a>4、执行上边的扩容操作</h3><pre class=" language-bash"><code class="language-bash">resize2fs /dev/mapper/pve-root
+</code></pre>
+<h3 id="5-删除-local-lvm"><a href="#5-删除-local-lvm" class="headerlink" title="5.删除 local-lvm"></a>5.删除 local-lvm</h3><p>路径：<code>数据中心-储存-删除 local-lvm</code></p>
+<p><img src="https://s2.loli.net/2022/04/01/Q8BEPYUXcrfq4yk.png" alt="删除lvm"></p>
+<h3 id="6-修改local（可选）"><a href="#6-修改local（可选）" class="headerlink" title="6.修改local（可选）"></a>6.修改local（可选）</h3><p>路径：<code>数据中心-储存-编辑 local</code> 如果想把虚拟机存储在local里，就在内容里选中所有项目，否则保持默认即可</p>
+<p><img src="https://s2.loli.net/2022/04/01/2whWRgt4poIbSsJ.png" alt="修改local存储内容"></p>
 
                 
             </div>
@@ -523,7 +519,7 @@ ZerotierFix 下载
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://iwekz.xyz/2022/03/30/zerotier-ke-hu-duan-jia-zai-moons-planet/">https://iwekz.xyz/2022/03/30/zerotier-ke-hu-duan-jia-zai-moons-planet/</a>
+                    <a href="https://iwekz.xyz/2022/04/01/pve-shan-chu-lvm-kuo-rong-local/">https://iwekz.xyz/2022/04/01/pve-shan-chu-lvm-kuo-rong-local/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -732,11 +728,12 @@ ZerotierFix 下载
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/03/31/untitled/">
+                <a href="/2022/04/01/pve-shan-chu-lvm-kuo-rong-local/">
                     <div class="card-image">
                         
                         
@@ -752,9 +749,9 @@ ZerotierFix 下载
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -763,6 +760,7 @@ ZerotierFix 下载
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -773,13 +771,13 @@ ZerotierFix 下载
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/28/yun-fu-wu-qi-da-jian-zerotier-moon-planet/">
+                <a href="/2022/04/01/pve-an-zhuang-docker-yi-ji-portainer/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="云服务器搭建zerotier-moon，planet">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="pve安装docker以及portainer">
                         
-                        <span class="card-title">云服务器搭建zerotier-moon，planet</span>
+                        <span class="card-title">pve安装docker以及portainer</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -790,7 +788,7 @@ ZerotierFix 下载
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-01
                             </span>
                         <span class="publish-author">
                             

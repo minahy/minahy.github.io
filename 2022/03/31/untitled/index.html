@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Minaの筆記">
-    <meta name="description" content="![mood](https://s2.loli.net/2022/03/31/E7MX4CvnBR9aqYG.png)![](https://s2.loli.net/2022/03/31/rZYvBSPkiKeCh2G.jpg)
- ![安卓">
+    <meta name="description" content="登陆pve Shell控制台将&amp;#x2F;etc&amp;#x2F;apt&amp;#x2F;sources.list.d&amp;#x2F;pve-enterprise.list 文件内的唯一一条记录注释掉：
+echo &#34;#deb https://enterpr">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -474,17 +474,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong><code>![mood](https://s2.loli.net/2022/03/31/E7MX4CvnBR9aqYG.png)![](https://s2.loli.net/2022/03/31/rZYvBSPkiKeCh2G.jpg)</code></strong></p>
-<p><strong><code> ![安卓设置moon](https://s2.loli.net/2022/03/31/TBvza8DyUOYWNEw.png) ![安卓设置moon 1](https://s2.loli.net/2022/03/31/Mi1N2jnTlHyox6c.png)</code></strong></p>
-<center>
-<figure>
-<img src="https://s2.loli.net/2022/03/31/E7MX4CvnBR9aqYG.png" />
-·
-·
-·
-<img src="https://s2.loli.net/2022/03/31/rZYvBSPkiKeCh2G.jpg" />
-</figure>
-</center>
+                <p><strong>登陆pve Shell控制台</strong><br>将&#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;pve-enterprise.list 文件内的唯一一条记录注释掉：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token keyword">echo</span> <span class="token string">"#deb https://enterprise.proxmox.com/debian/pve bullseye pve-enterprise"</span> <span class="token operator">></span> /etc/apt/sources.list.d/pve-enterprise.list
+</code></pre>
+<h3 id="Debian系统源更换"><a href="#Debian系统源更换" class="headerlink" title="Debian系统源更换"></a>Debian系统源更换</h3><p>阿里Debian源（sed 二选一）：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">sed</span> -i.bak <span class="token string">"s#ftp.debian.org/debian#mirrors.aliyun.com/debian#g"</span> /etc/apt/sources.list     #阿里Debian源
+<span class="token function">sed</span> -i <span class="token string">"s#security.debian.org#mirrors.aliyun.com/debian-security#g"</span> /etc/apt/sources.list     #阿里Debian源
+apt update
+</code></pre>
 
                 
             </div>
@@ -720,18 +717,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/03/31/untitled/">
+                <a href="/2022/04/01/pve-an-zhuang-docker-yi-ji-portainer/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="pve安装docker以及portainer">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">pve安装docker以及portainer</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -741,9 +737,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-31
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-01
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -752,7 +748,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -763,7 +758,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/03/30/zerotier-ke-hu-duan-jia-zai-moons-planet/">
+                <a href="/2022/03/30/zerotier-ke-hu-duan-jia-zai-moon-planet/">
                     <div class="card-image">
                         
                         
